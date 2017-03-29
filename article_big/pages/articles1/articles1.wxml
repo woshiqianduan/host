@@ -1,0 +1,32 @@
+<view class="con">
+  <image  style="height:{{winHeight/3.4}}px" src="../images/2.png"></image>
+  <view class="text">
+      <view>
+         学好数理化，走遍宇宙都不怕，学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕    
+      </view>
+    <image src="../images/a.jpg"></image>
+      <view>
+         学好数理化，走遍宇宙都不怕，学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕    
+      </view>
+  </view>
+</view>
+ <view class="time">
+        <image src="../images/time.png"></image>
+        <view class="date">
+            2017/03/21
+        </view>
+        <view class="read">
+            <view class="date">12893</view> <view class="times">阅读</view>
+        </view>
+</view>
+<view class="more">
+  <view class="more-article">
+    更多文章
+  </view>
+  <scroll-view class="recommend_scroll_x_box" scroll-x="true">
+    <view wx:for="{{article_title}}">
+      <image src="{{item.src}}"></image>
+      {{item.name}}
+    </view>
+  </scroll-view>
+</view>

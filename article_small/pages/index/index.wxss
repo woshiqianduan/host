@@ -1,0 +1,197 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+page {
+  background: #f9f9f9;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+}
+
+.box {
+  width: 70%;
+  height: 100rpx;
+  margin-left: 15%;
+}
+
+.box view {
+  float: left;
+  width: 33%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #888;
+  font-size: 13pt;
+}
+
+.header .box .active {
+  color: #32afff;
+}
+
+.img {
+  width: 35%;
+  height: 200rpx;
+  float: left;
+}
+
+.img image {
+  width: 80%;
+  height: 72%;
+  margin-top: 14%;
+  margin-left: 6%;
+}
+
+.box1 {
+  width: 100%;
+  background: #f9f9f9;
+  margin-top: 0px;
+  height: 100%;
+  padding-bottom: 70rpx;
+}
+
+.box2 {
+  width: 94%;
+  clear: both;
+  overflow: hidden;
+  margin-top: 13px;
+  background: #fff;
+  margin-left: 3%;
+  box-shadow: 0px 0px 5px #e0d9d9;
+  padding-bottom: 10rpx;
+  border-radius: 8rpx;
+}
+
+.box2 .content {
+  float: left;
+  width: 60%;
+  margin-left: 5%;
+  margin-top: 5rpx;
+}
+
+.box2 .title {
+  font-size: 11pt;
+  line-height: 60rpx;
+  margin-left: 0;
+}
+
+.box2 .article {
+  width: 100%;
+  font-size: 9pt;
+  color: #888;
+  height: 110rpx;
+  clear: both;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  line-height: 36rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.news {
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 15px;
+  box-shadow: 0px 0px 2px #ddd;
+  padding-bottom: 70rpx;
+}
+
+.box1 .news .main {
+  width: 100%;
+}
+
+.news_title {
+  width: 100%;
+  background: #fff;
+  height: 30rpx;
+}
+
+.news view {
+  float: left;
+  height: 50rpx;
+}
+
+.box2 .title {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13pt;
+  line-height: 30pt;
+  margin-left: 0rpx;
+}
+
+.dot {
+  margin-left: 15%;
+}
+
+.right {
+  width: 15px;
+  height: 15px;
+  margin-right: 0;
+}
+
+swiper {
+  width: 100%;
+  clear: both;
+  height: 80%;
+  margin-top: -50px;
+}
+
+page {
+  height: 100%;
+}
+
+.con {
+  width: 100%;
+}
+
+.con image {
+  width: 100%;
+}
+
+swiper-item {
+  width: 100%;
+}
+
+.con .text {
+  text-indent: 22pt;
+  font-size: 20pt;
+}
+
+.active {
+  color: red;
+}
+
+.recommend_scroll_x_box {
+  height: 900px;
+}
+
+.navigator-hover {
+  background: none;
+}

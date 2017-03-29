@@ -1,0 +1,37 @@
+<view class="con">
+          <image src="../images/2.png"></image>
+          <view class="text">
+            <view>
+                学好数理化，走遍宇宙都不怕，学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕学好数理化，走遍宇宙都不怕
+            </view>
+          </view>
+   
+</view>
+ <view class="time">
+        <image src="../images/time.png"></image>
+        <view class="date">
+            2017/03/21
+        </view>
+        <view class="read">
+            <view class="date">12893</view> <view class="times">阅读</view>
+        </view>
+</view>
+
+<view class="information">
+    请输入信息
+    <image src="../images/line.png"></image>
+</view>
+<form class="form"  bindreset="formReset">
+    <view class="vw">
+        <view>姓名</view><input type="text"  />
+    </view>
+    <view  class="vw">
+        <view>手机</view><input type="text"  />
+    </view>
+    <view  class="vw">
+        <view>城市</view><input type="text"  />
+    </view>
+    <view class="btn"> 
+        <button form-type="reset"  bindtap="openAlert">提交信息</button>
+    </view>
+</form>
