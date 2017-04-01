@@ -76,7 +76,7 @@ export default {
 }
 window.onload = function (argument) {
   var oHtml = document.getElementsByTagName('html')
-  oHtml[0].style.height = '90%'
+  oHtml[0].style.height = '0'
 }
 </script>
 <style>
@@ -87,11 +87,10 @@ window.onload = function (argument) {
 	width: 100%;
 	text-align:left;
 	background: #f9f9f9;
-	height: 100%;
 }
 .choose{
 	color: #8e8e8e;
-	line-height: 0.8rem;
+	line-height: 1rem;
 	font-size: 0.25rem;
 	padding-left: 0.4rem;
 	position: relative;
@@ -145,6 +144,7 @@ html{
 	border-left: 0;
 	border-right: 0;
 	margin-top: 0.2rem;
+	display: block;
 }
 a{
 	color: #222;

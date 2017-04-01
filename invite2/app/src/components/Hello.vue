@@ -8,7 +8,7 @@
       <a class="how" v-on:click="show = true" >如何邀请好友获得积分？</a>
     </div>
     <div class="choose in1">
-      <p>选择奖励兑换<span>·</span>45分</p>
+      <p class="chop">选择奖励兑换<span>·</span>45分</p>
       <router-link tag="span" to="/exchange">
         <a class="dh">兑换奖励<div></div></a> 
       </router-link>
@@ -100,7 +100,6 @@ export default {
   height: 100%;
   font-size: 0.22rem;
 }
-
 @-webkit-keyframes move {
   from {
     top: 900px
@@ -117,10 +116,9 @@ export default {
     top: 0;
   }
 }
-
 .invite1{
   width: 100%;
-  background: #37393e;
+  background: #404249;
   display: block;
   margin-top: 0;
   position: relative;
@@ -139,9 +137,10 @@ export default {
   font-weight: bold;
 }
 .choose .dh{
-  font-size: 0.27rem;
+  font-size: 0.28rem;
   line-height: 0.76rem;
   display: inline-block;
+  top: 0.1rem;
 }
 .choose .dh div{
   display: inline-block;
@@ -152,6 +151,9 @@ export default {
   border-style: solid;
   transform:rotateZ(225deg);
   margin-left: 0.08rem;
+}
+.chop{
+  line-height: 0.8rem;
 }
 .invite1 .box1{
   width: 80%;
@@ -183,8 +185,8 @@ export default {
 .in1{
   border-bottom: 1px solid #e9e9e9;
   clear: both;
-  height: 0.74rem;
-  line-height: 0.74rem;
+  height: 1rem;
+  line-height: 1.14rem;
 }
 .in1 p{
   position: absolute;
@@ -192,6 +194,7 @@ export default {
   color: #8e8e8e;
   font-size: 0.29rem;
   display: block;
+  top: 0.1rem;
 }
 .inv1{
   text-align: left;
@@ -300,9 +303,6 @@ export default {
   position: absolute;
   right: 0;
   border-radius: 5px;
-}
-.cancel1:active{
-  background: #af1e1e;
 }
 
 .content{
