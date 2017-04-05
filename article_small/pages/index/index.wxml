@@ -214,7 +214,18 @@
   </swiper-item>
   <swiper-item>
     <scroll-view class="recommend_scroll_x_box" scroll-y="true" style="height:{{winHeight - 43}}px">
-      <navigator url="../articles/articles?title=articles">
+     
+    <view class="info">
+      <image src="../images/head.png"></image>
+      <view class="name">
+        这是李博
+      </view>
+      <view class="times">
+        已阅读18篇
+      </view>
+
+    </view>
+     <navigator url="../articles/articles?title=articles">
         <view class="box2">
           <view class="content">
             <view class="title">莫负朱颜 不复相思</view>

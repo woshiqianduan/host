@@ -195,3 +195,26 @@ swiper-item {
 .navigator-hover {
   background: none;
 }
+.info{
+  width: 100%;
+  text-align: center;
+}
+.info .name{
+  font-weight: normal;
+  font-size: 12pt;
+  line-height: 26pt;
+  color: #605e5e;
+}
+.info image{
+  width: 110rpx;
+  height: 110rpx;
+  margin: 18pt 0 0 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.info .times{
+  font-size: 10pt;
+  color: #a8a8a8;
+  line-height: 10pt;
+  padding-bottom: 8pt;
+}
