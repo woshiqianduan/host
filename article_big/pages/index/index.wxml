@@ -160,6 +160,19 @@
   </swiper-item>
   <swiper-item>
     <scroll-view class="recommend_scroll_x_box box1" scroll-y="true" style="height:{{winHeight - 43}}px">
+           
+    <view class="info">
+      <image src="../images/head.png"></image>
+      <view class="name">
+        这是李博
+      </view>
+      <view class="times">
+        已阅读18篇
+      </view>
+
+    </view>
+
+
       <navigator url="../articles/articles?title=articles">
         <view class="news">
           <image class="main" style="height:{{winHeight/3}}px" src="../images/a.jpg"></image>
