@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="javascripts/viewport.js"></script>
+    <link rel="stylesheet" href="http://res.wx.qq.com/open/libs/weui/1.1.1/weui.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>周边门店列表</title>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+</head>
+<script>
+wx.ready(function () {
+    wx.getLocation({
+      type: 'gcj02', //wgs84 或 gcj02
+      success: function (res) {
+        var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
+        var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
+        var MJKD_LATLNG = latitude + ',' + longitude;
+        var url = 'http://api.map.baidu.com/geocoder/v2/?ak=ak&callback=renderReverse&location=' + MJKD_LATLNG + '&output=json&pois=1';
+        $.get(url, function(data) {
+          if(data.status === 0) {
+            alert(data.result.formatted_address + '=>' + data.result.sematic_description);
+          }
+        }, 'jsonp');
+      },
+      fail: function(res) {
+        alert('获取位置失败');
+      }
+    });
+  });
+</script>
+<body>
+
+<div class="map"></div>
+<div class="hidden">
+    <div class="nearby">
+    <p class="shops">附近的门店</p>
+    <div class="all"><a href="all.html"><p>所有门店</p></a>
+        <span class="right">
+        
+        </span>
+    </div>
+</div>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__bd">
+    <a href="info.html">
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">绿地进口超市|济南普利中心店</h4>
+            <p class="weui-media-box__desc">距离<span>1.34公里</span></p>
+            <div class="info">
+                <i class="iconfont icon-dianpu"></i>
+                <p>详情</p>
+            </div>
+
+        </div>
+    </a>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">绿地进口超市|济南普利中心店</h4>
+            <p class="weui-media-box__desc">距离<span>1.34公里</span></p>
+            <div class="info">
+                <i class="iconfont icon-dianpu"></i>
+                <p>详情</p>
+            </div>
+        </div>
+    </div>
+    <div class="weui-panel__bd">
+    <a href="info.html">
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">绿地进口超市|济南普利中心店</h4>
+            <p class="weui-media-box__desc">距离<span>1.34公里</span></p>
+            <div class="info">
+                <i class="iconfont icon-dianpu"></i>
+                <p>详情</p>
+            </div>
+
+        </div>
+    </a>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">绿地进口超市|济南普利中心店</h4>
+            <p class="weui-media-box__desc">距离<span>1.34公里</span></p>
+            <div class="info">
+                <i class="iconfont icon-dianpu"></i>
+                <p>详情</p>
+            </div>
+        </div>
+    </div>
+    <div class="weui-panel__bd">
+    <a href="info.html">
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">绿地进口超市|济南普利中心店</h4>
+            <p class="weui-media-box__desc">距离<span>1.34公里</span></p>
+            <div class="info">
+                <i class="iconfont icon-dianpu"></i>
+                <p>详情</p>
+            </div>
+
+        </div>
+    </a>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">绿地进口超市|济南普利中心店</h4>
+            <p class="weui-media-box__desc">距离<span>1.34公里</span></p>
+            <div class="info">
+                <i class="iconfont icon-dianpu"></i>
+                <p>详情</p>
+            </div>
+        </div>
+    </div>
+    <div class="weui-panel__bd">
+    <a href="info.html">
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">绿地进口超市|济南普利中心店</h4>
+            <p class="weui-media-box__desc">距离<span>1.34公里</span></p>
+            <div class="info">
+                <i class="iconfont icon-dianpu"></i>
+                <p>详情</p>
+            </div>
+
+        </div>
+    </a>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">绿地进口超市|济南普利中心店</h4>
+            <p class="weui-media-box__desc">距离<span>1.34公里</span></p>
+            <div class="info">
+                <i class="iconfont icon-dianpu"></i>
+                <p>详情</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
